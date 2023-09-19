@@ -2,7 +2,9 @@ package com.vicent.emailservice.application;
 
 import com.vicent.emailservice.adapters.EmailSenderGateway;
 import com.vicent.emailservice.core.EmailSenderUseCase;
+import org.springframework.stereotype.Service;
 
+@Service
 public class EmailSenderService implements EmailSenderUseCase {
 
     private final EmailSenderGateway emailSenderGateway;
